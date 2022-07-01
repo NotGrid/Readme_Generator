@@ -48,8 +48,8 @@ This project is licensed with ${license}`
 function generateMarkdown(data) {
   return `# ${data.Title}
 
-  ## Description
-  ${data.Description}
+## Description
+${data.Description}
 
   ## Table of Contents
   - [Installation](#installation)
@@ -59,24 +59,24 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
   
-  ## Installation
-  ${data.Installation}
+## Installation
+${data.Installation}
 
-  ## Usage
-  ${data.Usage}
+## Usage
+${data.Usage}
 
 ${renderLicenseSection(data.License)}
 
 
-  ## Contribution
-  ${data.Contributions}
+## Contribution
+${data.Contributions}
 
-  ## Tests
-  ${data.Tests}
+## Tests
+${data.Tests}
 
-  ## Questions
-  Github - ${data.Username}
-  Email - ${data.Email}
+## Questions
+Github - ${data.Username}
+Email - ${data.Email}
 `;
 }
 
